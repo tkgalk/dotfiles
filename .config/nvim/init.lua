@@ -1,0 +1,5 @@
+require("tkg.settings")
+require("tkg.keymaps")
+require("tkg.lazy")
+require("tkg.appearance")
+require("tkg.lsp")
