@@ -1,4 +1,4 @@
-require("tkg.settings")
+require("tkg.options")
 require("tkg.keymaps")
 require("tkg.lazy")
 require("tkg.appearance")

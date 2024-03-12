@@ -9,9 +9,9 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "melange_dark"
+		return "carbonfox"
 	else
-		return "melange_light"
+		return "dawnfox"
 	end
 end
 

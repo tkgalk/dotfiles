@@ -1,5 +1,5 @@
-local dark_theme = "melange"
-local light_theme = "melange"
+local dark_theme = "carbonfox"
+local light_theme = "dawnfox"
 
 -- Theme settings.
 vim.opt.termguicolors = true
