@@ -11,7 +11,7 @@ local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
 		return "carbonfox"
 	else
-		return "dawnfox"
+		return "dayfox"
 	end
 end
 
@@ -21,18 +21,19 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.freetype_load_flags = 'NO_HINTING'
-config.font = wezterm.font("JetBrains Mono", { weight = 600 })
-config.font_size = 14
-config.freetype_load_target = "Light"
-config.freetype_render_target = "HorizontalLcd"
-config.cell_width = 0.90
+config.font = wezterm.font("Berkeley Mono")
+config.font_size = 16
 config.line_height = 1.2
+config.freetype_render_target = "HorizontalLcd"
+
 config.window_background_opacity = 1
-config.use_fancy_tab_bar = false
 config.strikethrough_position = "0.5cell"
+
+config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
+
 config.color_scheme = scheme_for_appearance(get_appearance())
+
 config.window_padding = {
 	left = 0,
 	right = 0,
@@ -82,8 +83,5 @@ wezterm.on('gui-startup', function(cmd)
   local _, _, window = wezterm.mux.spawn_window(cmd or {})
   window:gui_window():maximize()
 end)
-
--- macOS specific configs.
-config.macos_window_background_blur = 0
 
 return config

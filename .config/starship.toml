@@ -1,0 +1,22 @@
+add_newline = false
+
+[battery]
+disabled = true
+
+[aws]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[git_branch]
+symbol = ""
+
+[golang]
+symbol = "go: "
+
+[ruby]
+symbol = "rb: "
+
+[rust]
+symbol = "rs: "
