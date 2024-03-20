@@ -22,4 +22,5 @@ brew install neovim
 brew install zoxide
 brew install fzf
 brew install gh
+brew install starship
 ```
