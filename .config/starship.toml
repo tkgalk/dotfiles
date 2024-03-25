@@ -20,3 +20,10 @@ symbol = "rb: "
 
 [rust]
 symbol = "rs: "
+
+[nodejs]
+format = "node: "
+detect_files = ['package.json', '.node-version', '!bunfig.toml', '!bun.lockb']
+
+[bun]
+symbol = "bun: "

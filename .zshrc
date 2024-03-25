@@ -21,3 +21,10 @@ op inject --in-file "${HOME}/.secrets.zsh" | while read -r line; do
   eval "$line"
 done
 
+
+# bun completions
+[ -s "/Users/tkg/.bun/_bun" ] && source "/Users/tkg/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
