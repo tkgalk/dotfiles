@@ -16,3 +16,8 @@ alias vim=nvim
 
 # Start the starship prompt.
 eval "$(starship init zsh)"
+
+op inject --in-file "${HOME}/.secrets.zsh" | while read -r line; do
+  eval "$line"
+done
+
