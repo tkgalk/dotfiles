@@ -29,6 +29,9 @@ return {
 			["<leader>d"] = {
 				name = "+diagnostics"
 			},
+			["<leader>b"] = {
+				name = "+debugger"
+			},
 		})
 	end
 }

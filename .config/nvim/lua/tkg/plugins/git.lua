@@ -32,5 +32,23 @@ return {
 		keys = {
 			{ "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "[g]it current line [b]lame" },
 		}
+	},
+
+	{
+		"ruifm/gitlinker.nvim",
+
+		dependencies = {
+			"nvim-lua/plenary.nvim"
+		},
+
+		opts = {
+			mappings = nil,
+		},
+
+		event = "VeryLazy",
+
+		keys = {
+			{ "<leader>gy", "<cmd>lua require('gitlinker').get_repo_url()<cr>", desc = "[g]it [y]ank" },
+		}
 	}
 }

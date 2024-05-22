@@ -1,5 +1,5 @@
-local dark_theme = "carbonfox"
-local light_theme = "dayfox"
+local dark_theme = "tokyonight-night"
+local light_theme = "tokyonight-day"
 
 -- Theme settings.
 vim.opt.termguicolors = true
@@ -41,4 +41,3 @@ if os.sysname == "Darwin" then
 		vim.cmd(string.format([[colorscheme %s]], light_theme))
 	end
 end
-

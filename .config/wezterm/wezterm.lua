@@ -9,16 +9,16 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "carbonfox"
+		return "tokyonight_night"
 	else
-		return "dayfox"
+		return "tokyonight_day"
 	end
 end
 
 local config = {}
 
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
 
 config.font = wezterm.font("Berkeley Mono")
@@ -28,6 +28,7 @@ config.freetype_render_target = "HorizontalLcd"
 
 config.window_background_opacity = 1
 config.strikethrough_position = "0.5cell"
+config.use_resize_increments = true
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
@@ -71,17 +72,17 @@ config.keys = {
 
 -- CTRL+ALT + number to move to that position
 for i = 1, 8 do
-  table.insert(config.keys, {
-    key = tostring(i),
-    mods = 'CTRL|SHIFT',
-    action = wezterm.action.MoveTab(i - 1),
-  })
+	table.insert(config.keys, {
+		key = tostring(i),
+		mods = 'CTRL|SHIFT',
+		action = wezterm.action.MoveTab(i - 1),
+	})
 end
 
 -- Start wezterm with a maximized window.
 wezterm.on('gui-startup', function(cmd)
-  local _, _, window = wezterm.mux.spawn_window(cmd or {})
-  window:gui_window():maximize()
+	local _, _, window = wezterm.mux.spawn_window(cmd or {})
+	window:gui_window():maximize()
 end)
 
 return config
