@@ -1,5 +1,5 @@
-local dark_theme = "tokyonight-night"
-local light_theme = "tokyonight-day"
+local dark_theme = "default"
+local light_theme = "default"
 
 -- Theme settings.
 vim.opt.termguicolors = true

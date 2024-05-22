@@ -34,15 +34,15 @@ vim.keymap.set("n", "N", "Nzzzv", { noremap = true, silent = true })
 vim.keymap.set("n", "Q", "<nop>", { noremap = true, silent = true })
 
 -- Resize current window using arrows.
-vim.keymap.set("n", "<A-Up>", ":resize +2<CR>", { noremap = true, silent = true }, "Resize Horizontal +")
-vim.keymap.set("n", "<A-Down>", ":resize -2<CR>", { noremap = true, silent = true }, "Resize Horizontal -")
-vim.keymap.set("n", "<A-Right>", ":vertical resize +2<CR>", { noremap = true, silent = true }, "Resize Vertical +")
-vim.keymap.set("n", "<A-Left>", ":vertical resize -2<CR>", { noremap = true, silent = true }, "Resize Verital -")
+vim.keymap.set("n", "<A-Up>", ":resize +2<CR>", { noremap = true, silent = true, desc = "Resize Horizontal +" })
+vim.keymap.set("n", "<A-Down>", ":resize -2<CR>", { noremap = true, silent = true, desc = "Resize Horizontal -" })
+vim.keymap.set("n", "<A-Right>", ":vertical resize +2<CR>", { noremap = true, silent = true, desc = "Resize Vertical +" })
+vim.keymap.set("n", "<A-Left>", ":vertical resize -2<CR>", { noremap = true, silent = true, desc = "Resize Verital -" })
 --
 
 -- Switch between next and previous buffer.
-vim.keymap.set("n", "<S-l>", ":bnext<CR>", { noremap = true, silent = true }, "Next Buffer")
-vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { noremap = true, silent = true }, "Previous Buffer")
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", { noremap = true, silent = true, desc = "Next Buffer" })
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous Buffer" })
 --
 
 -- Open Telescope file-switcher. [File]. [Search File]. [Search Tags].

@@ -26,12 +26,6 @@ local mode = {
 	end,
 }
 
-local filetype = {
-	"filetype",
-	icons_enabled = false,
-	icon = nil,
-}
-
 local filename = {
 	"filename",
 	path = 1,
@@ -42,15 +36,6 @@ local branch = {
 	icons_enabled = true,
 	icon = "",
 }
-
-local location = {
-	"location",
-	padding = 0,
-}
-
-local spaces = function()
-	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
-end
 
 return {
 	-- Show a status bar at the bottom.
@@ -68,17 +53,17 @@ return {
 		},
 		sections = {
 			lualine_a = { mode },
-			lualine_b = { branch, diagnostics },
+			lualine_b = { branch, diff },
 			lualine_c = { filename },
-			lualine_x = { diff, spaces },
-			lualine_y = { location },
-			lualine_z = {},
+			lualine_x = {},
+			lualine_y = {},
+			lualine_z = { diagnostics },
 		},
 		inactive_sections = {
-			lualine_a = {},
+			lualine_a = { filename },
 			lualine_b = {},
-			lualine_c = { "location" },
-			lualine_x = { "location" },
+			lualine_c = {},
+			lualine_x = {},
 			lualine_y = {},
 			lualine_z = {},
 		}

@@ -1,9 +1,4 @@
 return {
-	-- Commenting/uncommenting.
-	{
-		"tpope/vim-commentary",
-	},
-
 	{
 		"kylechui/nvim-surround",
 

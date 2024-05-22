@@ -51,20 +51,24 @@ M.setup = function()
 end
 
 local function lsp_keymaps()
-	vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true, desc = "Hover Tooltip" })
-
-	vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true, desc = "[G]o to [D]eclaration" })
-	vim.keymap.set("n", "gd", require("telescope.builtin").lsp_definitions, { noremap = true, silent = true, desc = "[G]o to [d]efinitions" })
-	vim.keymap.set("n", "gI", require("telescope.builtin").lsp_implementations, { noremap = true, silent = true, desc = "[G]o to [I]mplementations" })
-	vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { noremap = true, silent = true, desc = "[G]o to [r]eferences" })
-	vim.keymap.set("n", "<leader>k", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true, desc = "Show Diagnostic Bubble" })
-	vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", { noremap = true, silent = true, desc = "[f]ormat" })
-	vim.keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", { noremap = true, silent = true, desc = "Code [a]ction" })
-	vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", { noremap = true, silent = true, desc = "[r]ename" })
-	vim.keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true, desc = "Show [s]ignature" })
-
-	vim.keymap.set("n", "<leader>dj", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", { noremap = true, silent = true, desc = "next [d]iagnostic" })
-	vim.keymap.set("n", "<leader>dk", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", { noremap = true, silent = true, desc = "previous [d]iagnostic" })
+	vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>",
+		{ noremap = true, silent = true, desc = "[G]o to [D]eclaration" })
+	vim.keymap.set("n", "gd", require("telescope.builtin").lsp_definitions,
+		{ noremap = true, silent = true, desc = "[G]o to [d]efinitions" })
+	vim.keymap.set("n", "gI", require("telescope.builtin").lsp_implementations,
+		{ noremap = true, silent = true, desc = "[G]o to [I]mplementations" })
+	vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references,
+		{ noremap = true, silent = true, desc = "[G]o to [r]eferences" })
+	vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>",
+		{ noremap = true, silent = true, desc = "[f]ormat" })
+	vim.keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>",
+		{ noremap = true, silent = true, desc = "Code [a]ction" })
+	vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>",
+		{ noremap = true, silent = true, desc = "[r]ename" })
+	vim.keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>",
+		{ noremap = true, silent = true, desc = "Show [s]ignature" })
+	vim.keymap.set("n", "<leader>li", "<cmd>lua vim.lsp.inlay_hint.enable()<CR>",
+		{ noremap = true, silent = true, desc = "Toggle [i]nlay hints" })
 end
 
 M.on_attach = function(client)
