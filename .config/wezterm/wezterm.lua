@@ -9,9 +9,9 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "tokyonight_night"
+		return "nvim_dark"
 	else
-		return "tokyonight_day"
+		return "nvim_light"
 	end
 end
 

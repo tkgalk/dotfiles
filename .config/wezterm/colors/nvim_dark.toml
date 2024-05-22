@@ -1,0 +1,30 @@
+[colors]
+foreground = "#e0e2ea" # NvimLightGray2
+background = "#14161b" # NvimDarkGray2
+
+ansi = [
+	"#07080d", # NvimDarkGray1
+	"#590008", # NvimDarkRed
+	"#b3f6c0", # NvimLightGreen
+	"#fce094", # NvimLightYellow
+	"#004c73", # NvimDarkBlue
+	"#470045", # NvimDarkMagenta
+	"#007373", # NvimDarkCyan
+	"#eef1f8", # NvimLightGray1
+]
+
+brights = [
+	"#2c2e33", # NvimDarkGray3
+	"#ffc0b9", # NvimLightRed
+	"#b3f6c0", # NvimLightGreen
+	"#fce094", # NvimLightYellow
+	"#a6dbff", # NvimLightBlue
+	"#470045", # NvimDarkMagenta
+	"#007373", # NvimDarkCyan
+	"#eef1f8", # NvimLightGray1
+]
+
+[metadata]
+aliases = []
+author = "tkg"
+name = "nvim_dark"
