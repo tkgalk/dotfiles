@@ -9,9 +9,9 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "nvim_dark"
+		return "catppuccin-mocha"
 	else
-		return "nvim_light"
+		return "catppuccin-latte"
 	end
 end
 

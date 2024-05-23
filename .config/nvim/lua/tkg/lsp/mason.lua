@@ -7,6 +7,7 @@ local servers = {
 	"terraformls",
 	"gdscript",
 	"omnisharp",
+	"clangd"
 }
 
 local settings = {
