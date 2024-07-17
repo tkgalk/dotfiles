@@ -1,14 +1,4 @@
 return {
-	-- {
-	-- 	"tpope/vim-fugitive",
-
-	-- 	keys = {
-	-- 		{
-	-- 			"<leader>gv", mode = "n", [[<cmd>Git<cr>]], desc = "[g]it [v]iew",
-	-- 		}
-	-- 	}
-	-- },
-
 	{
 		"NeogitOrg/neogit",
 
@@ -16,6 +6,12 @@ return {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",
 			"nvim-telescope/telescope.nvim",
+		},
+
+		keys = {
+			{
+				"<leader>gv", mode = "n", [[<cmd>Neogit<cr>]], desc = "[g]it [v]iew",
+			},
 		},
 
 		config = true,

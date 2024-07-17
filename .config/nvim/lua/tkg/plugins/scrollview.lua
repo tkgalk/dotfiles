@@ -1,5 +1,7 @@
 return {
 	"dstein64/nvim-scrollview",
 
-	config = true
+	config = true,
+
+	event = "VeryLazy",
 }

@@ -1,7 +1,7 @@
 return {
 	"stevearc/oil.nvim",
 
-	lazy = false,
+	lazy = true,
 
 	opts = {
 		show_hidden = true,
