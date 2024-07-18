@@ -15,6 +15,4 @@ return {
 			desc = "project view",
 		}
 	},
-
-	dependencies = { "nvim-tree/nvim-web-devicons" },
 }

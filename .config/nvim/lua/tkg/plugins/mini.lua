@@ -21,5 +21,10 @@ return {
 
 		-- Code commenting.
 		require("mini.comment").setup()
+
+		-- Icon pack.
+		require("mini.icons").setup({
+			style = "ascii",
+		})
 	end,
 }

@@ -2,36 +2,31 @@ return {
 	-- Show possible keybindings when you start using them.
 	"folke/which-key.nvim",
 
-	config = true,
+	event = "VeryLazy",
 
-	init = function()
-		local cmp_status_ok, whichkey = pcall(require, "which-key")
-		if not cmp_status_ok then
-			return
-		end
+	opts = {
+		preset = "helix",
+		icons = {
+			rules = false,
+		},
+		spec = {
+			{ "<leader>s", group = "search" },
+			{ "<leader>h", group = "harpoon" },
+			{ "<leader>l", group = "lsp" },
+			{ "<leader>p", group = "project" },
+			{ "<leader>g", group = "git" },
+			{ "<leader>d", group = "diagnostics" },
+			{ "<leader>b", group = "debugger" },
+		},
+	},
 
-		whichkey.register({
-			["<leader>s"] = {
-				name = "+search"
-			},
-			["<leader>h"] = {
-				name = "+harpoon"
-			},
-			["<leader>l"] = {
-				name = "+lsp"
-			},
-			["<leader>p"] = {
-				name = "+project"
-			},
-			["<leader>g"] = {
-				name = "+git"
-			},
-			["<leader>d"] = {
-				name = "+diagnostics"
-			},
-			["<leader>b"] = {
-				name = "+debugger"
-			},
-		})
-	end
+	keys = {
+		{
+			"<leader>?",
+			function()
+				require("which-key").show({ global = false })
+			end,
+			desc = "buffer local keymaps (which-key)",
+		}
+	},
 }

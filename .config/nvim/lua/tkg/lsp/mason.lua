@@ -5,7 +5,6 @@ local servers = {
 	"rust_analyzer",
 	"svelte",
 	"terraformls",
-	"gdscript",
 	"omnisharp",
 	"clangd"
 }
