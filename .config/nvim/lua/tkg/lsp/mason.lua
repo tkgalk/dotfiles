@@ -2,6 +2,7 @@ local servers = {
 	"lua_ls",
 	"tsserver",
 	"gopls",
+	"golangci_lint_ls",
 	"rust_analyzer",
 	"svelte",
 	"terraformls",

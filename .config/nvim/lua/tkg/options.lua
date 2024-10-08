@@ -29,6 +29,8 @@ vim.opt.completeopt = { "menuone", "noselect" }
 -- Pop up menu height.
 vim.opt.pumheight = 10
 
+vim.opt.cmdheight = 1
+
 -- Show line numbers.
 vim.opt.number = true
 

@@ -5,10 +5,19 @@ return {
 	-- 	priority = 1000,
 	-- 	opts = {},
 	-- }
+	-- {
+	-- 	"catppuccin/nvim",
+	-- 	name = "catppuccin",
+	-- 	priority = 1000,
+	-- 	lazy = false,
+	-- }
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"navarasu/onedark.nvim",
 		priority = 1000,
 		lazy = false,
+
+		opts = {
+			style = "warmer",
+		},
 	}
 }

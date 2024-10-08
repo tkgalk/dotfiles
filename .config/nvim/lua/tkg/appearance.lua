@@ -1,5 +1,5 @@
-local dark_theme = "catppuccin-mocha"
-local light_theme = "catppuccin-latte"
+local dark_theme = "default"
+local light_theme = "default"
 
 -- Theme settings.
 vim.opt.termguicolors = true

@@ -85,9 +85,12 @@ setopt hist_find_no_dups
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(rbenv init - zsh)"
+eval "$(fnm env --use-on-cd)"
 
 # Set default postgres user.
 export PGUSER=postgres
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[[ -s "/Users/tkg/.gvm/scripts/gvm" ]] && source "/Users/tkg/.gvm/scripts/gvm"

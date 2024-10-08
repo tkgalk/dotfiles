@@ -40,7 +40,7 @@ return {
 		"leoluz/nvim-dap-go",
 
 		config = true,
-		dependencies = { "mfussenegger/nvim-dap" },
+		dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
 
 		keys = {
 			{
