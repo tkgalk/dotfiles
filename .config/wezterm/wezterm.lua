@@ -9,9 +9,9 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "NvimDark"
+		return "Rosé Pine (Gogh)"
 	else
-		return "NvimLight"
+		return "Rosé Pine Dawn (Gogh)"
 	end
 end
 

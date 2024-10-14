@@ -72,7 +72,7 @@ local function lsp_keymaps()
 end
 
 M.on_attach = function(client)
-	if client.name == "tsserver" then
+	if client.name == "ts_ls" then
 		client.server_capabilities.documentFormattingProvider = false
 	end
 

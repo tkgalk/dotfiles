@@ -1,3 +1,5 @@
+---@diagnostic disable: missing-fields
+
 return {
 	-- Treesitter for syntax highlighting.
 	"nvim-treesitter/nvim-treesitter",
@@ -10,13 +12,29 @@ return {
 		end
 
 		configs.setup({
-			ensure_installed = { "bash", "c", "javascript", "json", "lua", "python", "typescript", "tsx", "css", "rust",
+			ensure_installed = {
+				"luadoc",
+				"markdown",
+				"markdown_inline",
+				"vim",
+				"vimdoc",
+
+				"bash",
+				"c",
+				"css",
+				"dockerfile",
 				"go",
-				"java", "yaml", "markdown", "markdown_inline" }, -- one of "all" or a list of languages
-			ignore_install = { "phpdoc" },           -- List of parsers to ignore installing
+				"javascript",
+				"json",
+				"lua",
+				"python",
+				"rust",
+				"tsx",
+				"typescript",
+				"yaml",
+			},
 			highlight = {
-				enable = true,                       -- false will disable the whole extension
-				disable = { "css" },                 -- list of language that will be disabled
+				enable = true, -- false will disable the whole extension
 			},
 			autopairs = {
 				enable = true,

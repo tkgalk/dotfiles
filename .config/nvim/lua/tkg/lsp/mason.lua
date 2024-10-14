@@ -1,13 +1,8 @@
 local servers = {
 	"lua_ls",
-	"tsserver",
+	"ts_ls",
 	"gopls",
 	"golangci_lint_ls",
-	"rust_analyzer",
-	"svelte",
-	"terraformls",
-	"omnisharp",
-	"clangd"
 }
 
 local settings = {

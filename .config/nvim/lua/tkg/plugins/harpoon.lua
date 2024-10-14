@@ -61,7 +61,7 @@ return {
 			"<leader>h6",
 			mode = "n",
 			[[<cmd>lua require('harpoon.ui').nav_file(6)<CR>]],
-			desc = "[h]arpoon [4] file",
+			desc = "[h]arpoon [6] file",
 		},
 	},
 }
