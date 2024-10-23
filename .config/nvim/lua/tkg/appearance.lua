@@ -1,5 +1,5 @@
-local dark_theme = "rose-pine"
-local light_theme = "rose-pine-dawn"
+local dark_theme = "nordfox"
+local light_theme = "dayfox"
 
 -- Theme settings.
 vim.opt.termguicolors = true

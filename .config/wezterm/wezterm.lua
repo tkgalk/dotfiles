@@ -9,9 +9,9 @@ end
 
 local function scheme_for_appearance(appearance)
 	if appearance:find "Dark" then
-		return "Rosé Pine (Gogh)"
+		return "nordfox"
 	else
-		return "Rosé Pine Dawn (Gogh)"
+		return "dayfox"
 	end
 end
 
@@ -22,9 +22,8 @@ if wezterm.config_builder then
 end
 
 config.font = wezterm.font("Berkeley Mono")
-config.font_size = 16
+config.font_size = 12
 config.line_height = 1.2
-config.freetype_render_target = "HorizontalLcd"
 
 config.window_background_opacity = 1
 config.strikethrough_position = "0.5cell"

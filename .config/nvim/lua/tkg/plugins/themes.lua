@@ -11,13 +11,13 @@ return {
 	-- 	priority = 1000,
 	-- 	lazy = false,
 	-- }
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
-
-		priority = 1000,
-		lazy = false,
-	},
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
+	--
+	-- 	priority = 1000,
+	-- 	lazy = false,
+	-- },
 	-- {
 	-- 	"navarasu/onedark.nvim",
 	-- 	priority = 1000,
@@ -26,5 +26,11 @@ return {
 	-- 	opts = {
 	-- 		style = "warmer",
 	-- 	},
-	-- }
+	-- },
+	{
+		"EdenEast/nightfox.nvim",
+
+		priority = 1000,
+		lazy = false,
+	}
 }
